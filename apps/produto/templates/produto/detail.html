@@ -1,0 +1,32 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %}Detalhes do produto{% endblock title %}
+
+
+{% block main %}
+<h3>Detalhes do produtos</h3>
+<form class="needs-validation" method="post">
+  {% csrf_token %}
+  <div class="row g-3">
+    <div class="col-sm-6">
+      <label class="form-label">{{ form.descricao.label }}</label>
+      <input type="text" class="form-control" placeholder="" value="{{ form.descricao.value }}" disabled="">
+    </div>
+    <div class="col-sm-6">
+      <label class="form-label">{{ form.data_validade.label }}</label>
+      <input type="text" class="form-control" placeholder="" value="{{ form.data_validade.value }}" disabled="">
+    </div>
+    <div class="col-sm-6">
+      <label class="form-label">{{ form.qtd_estoque.label }}</label>
+      <input type="text" class="form-control" placeholder="" value="{{ form.qtd_estoque.value }}" disabled="">
+    </div>
+    <div class="col-sm-6">
+      <label class="form-label">{{ form.preco_unid.label }}</label>
+      <input type="text" class="form-control" placeholder="" value="{{ form.preco_unid.value }}" disabled="">
+    </div>
+  </div>
+  <hr class="my-4">
+
+  <a href="{% url 'listar_produto'%}" class="w-100 btn btn-primary btn-lg" type="submit">Voltar para lista</a>
+</form>
+{% endblock %}

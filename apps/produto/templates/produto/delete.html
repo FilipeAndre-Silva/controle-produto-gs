@@ -1,0 +1,15 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %}Deletar produto{% endblock title %}
+
+
+{% block main %}
+<h3>Exclusão de produtos</h3>
+<form method="post">
+    {% csrf_token %}
+    <p> Você deseja realmente deletar o produto <strong>{{ produto.descricao }}</strong> ?</p>
+    <span>Todos os dados relacionado ao mesmo será excluido da base dados.</span><br>
+    <button type="submit" class="btn btn-danger"> Deletar</button>
+    <a href="{% url 'listar_produto'%}" class="btn btn-primary" type="submit">Voltar para lista</a>
+</form>
+{% endblock %}

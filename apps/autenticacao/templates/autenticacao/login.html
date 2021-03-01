@@ -1,0 +1,25 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %}Cadastrar produto{% endblock title %}
+
+
+{% block main %}
+<h3>Autenticação para acessar os serviços</h3><br>
+<main class="col-4">
+
+  <form method="post">
+    {% csrf_token %}
+    <div class="form-group">
+      {{form.login}}
+    </div>
+    <br>
+    <div class="form-group">
+      {{form.password}}
+    </div>
+    <p style="color: red">{{form.errors}}</p>
+    <div class="form-group login-submit">
+      <button data-dismiss="modal" type="submit" class="btn btn-primary btn-xl">Login</button>
+    </div>
+  </form>
+</main>
+{% endblock %}

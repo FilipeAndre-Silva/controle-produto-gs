@@ -1,0 +1,31 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %}Cadastrar produto{% endblock title %}
+
+
+{% block main %}
+<div class="splash-container">
+    <div class="card card-border-color card-border-color-primary">
+        <div class="card-header">
+            <span class="splash-description">{{ user.email}}, você tem certeza que deseja sair?</span>
+        </div>
+        <div class="card-body">
+            <form method="post">
+                {% csrf_token %}
+                <div class="login-form">
+                    <div class="form-group row login-submit">
+                        <div class="col-1">
+                            <a href="{{request.META.HTTP_REFERER}}" data-dismiss="modal" type="submit"
+                               class="btn btn-primary btn-xl">Voltar</a>
+                        </div>
+                        <div class="col-1">
+                            <button data-dismiss="modal" type="submit" class="btn btn-danger btn-xl">Sair
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

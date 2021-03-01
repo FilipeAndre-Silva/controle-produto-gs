@@ -1,0 +1,14 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+{% block main %}
+    <main class="col-12" >
+        <h1 class="p-4 m-4 display-3 text-center">Bem Vindo ao Controle de Protudos</h1>
+        {% if user.is_authenticated %}
+            <h3 class="text-center">Acesse o menu ao topo para navegar pela plataforma !</h3>
+        {% else %}
+            <h3 class="text-center">Faça o login e tenha acesso a plataforma.</h3>
+        {% endif %}
+    </main>
+{% endblock %}

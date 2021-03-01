@@ -1,0 +1,36 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %}Serviço Web{% endblock title %}
+
+
+{% block main %}
+<div class="splash-container">
+
+    <div class="card card-border-color card-border-color-primary">
+        <div class="card-header">
+            <span class="splash-description">Consuma nosso serviço web.</span>
+        </div>
+        <div class="text-center">
+        <img src="{% static 'drf.png' %}" alt="...">
+    </div>
+        <div class="card-body">
+            <form method="post">
+                {% csrf_token %}
+                <div class="login-form">
+
+                    <strong>Tenha acesso se mantendo logado no sistema</strong>
+                    <br> ou <br>
+                    <strong>Usando o token do seu usuário:</strong>{{ token_user }}
+
+                    <div class="form-group row login-submit">
+                        <div class="col-2">
+                            <a href="http://localhost:8000/api/produto/" data-dismiss="modal" type="submit"
+                               class="btn btn-primary btn-xl">Acesse a API</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

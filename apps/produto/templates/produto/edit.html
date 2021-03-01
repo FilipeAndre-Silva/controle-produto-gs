@@ -1,0 +1,41 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %}Atualizar produto{% endblock title %}
+
+
+{% block main %}
+<h3>Atualização de produtos</h3>
+<form class="needs-validation" method="post">
+  {% csrf_token %}
+  <div class="row g-3">
+    <div class="col-sm-6">
+      <label class="form-label">{{ form.descricao.label }}</label>
+      {{ form.descricao }}
+    </div>
+    <div class="col-sm-6">
+      <label class="form-label">{{ form.data_validade.label }}</label>
+      {{ form.data_validade }}
+    </div>
+    <div class="col-sm-6">
+      <label class="form-label">{{ form.qtd_estoque.label }}</label>
+      {{ form.qtd_estoque }}
+    </div>
+    <div class="col-sm-6">
+      <label class="form-label">{{ form.preco_unid.label }}</label>
+      {{ form.preco_unid }}
+    </div>
+  </div>
+  <hr class="my-4">
+  {% if form.errors %}
+    {% for field in form %}
+        {% for error in field.errors %}
+            <div class="alert alert-danger">
+                <strong>{{ error|escape }}</strong>
+            </div>
+        {% endfor %}
+    {% endfor %}
+  {% endif %}
+  <button class="btn btn-success btn-lg" type="submit">Salvar alterações</button>
+  <a href="{% url 'listar_produto'%}" class="btn btn-primary btn-lg" type="submit">Voltar para lista</a>
+</form>
+{% endblock %}
