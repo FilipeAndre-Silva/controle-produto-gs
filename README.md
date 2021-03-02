@@ -54,13 +54,15 @@ O conjunto de funcionalidade que o Controle de Produtos disponibiliza são:
     python3 -m venv .venv
    
     . .ven/bin/activate
-3- Ainda dentro da pasta raioz do respositório execute o build do docker-composed essa forma:
+3- Ainda dentro da pasta raiz do respositório execute o build do docker-composed essa forma:
     
    docker-compose build
    
-   docker-compose up
+4- Crie um usuário para ter acesso ao sistema:
    
-4- Acesse os links dos servidores de Frontend e Backend:
+   docker-compose run web python manage.py createsuperuser
+
+4- Acesse os links dos servidores de Frontend e Backend da aplicação e faça o login com o seu usuário:
    
    http://0.0.0.0:8000/
    
