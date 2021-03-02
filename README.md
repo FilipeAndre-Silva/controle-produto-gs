@@ -66,7 +66,7 @@ O conjunto de funcionalidade que o Controle de Produtos disponibiliza são:
    
    - docker-compose run web python manage.py createsuperuser
 
-3- Execute os 3 servidores de aplicação(BD,WEB e FRONTEN) ao mesmo tempo com:
+3- Execute os 3 servidores de aplicação(BD,WEB e FRONTEND) ao mesmo tempo com:
     
    - docker-compose up
 
