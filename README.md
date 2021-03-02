@@ -62,7 +62,7 @@ O conjunto de funcionalidade que o Controle de Produtos disponibiliza são:
    
    docker-compose run web python manage.py createsuperuser
 
-4- Acesse os links dos servidores de Frontend e Backend da aplicação e faça o login com o seu usuário:
+5- Acesse os links dos servidores de Frontend e Backend da aplicação e faça o login com o seu usuário:
    
    http://0.0.0.0:8000/
    
