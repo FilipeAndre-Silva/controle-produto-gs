@@ -56,15 +56,15 @@ O conjunto de funcionalidade que o Controle de Produtos disponibiliza são:
     . .ven/bin/activate
 3- Ainda dentro da pasta raiz do respositório execute o build do docker-composed essa forma:
     
-   docker-compose build
+   - docker-compose build
    
 4- Crie um usuário para ter acesso ao sistema:
    
-   docker-compose run web python manage.py createsuperuser
+   - docker-compose run web python manage.py createsuperuser
 
 5- Acesse os links dos servidores de Frontend e Backend da aplicação e faça o login com o seu usuário:
    
-   http://0.0.0.0:8000/
+   - http://0.0.0.0:8000/
    
-   http://localhost:3000/
+   - http://localhost:3000/
    
