@@ -68,3 +68,4 @@ O conjunto de funcionalidade que o Controle de Produtos disponibiliza são:
    
    - http://localhost:3000/
    
+6- Pronto! Você já tem acesso ao sistema de Controle de Produtos.
