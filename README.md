@@ -58,11 +58,15 @@ O conjunto de funcionalidade que o Controle de Produtos disponibiliza são:
     
    - docker-compose build
    
+4- Realize migrações do banco de dados:
+   
+   - docker-compose run web python manage.py migrate   
+   
 4- Crie um usuário para ter acesso ao sistema:
    
    - docker-compose run web python manage.py createsuperuser
 
-5- Acesse os links dos servidores de Back-end for Front-end da aplicação e faça o login com o seu usuário:
+5- Acesse os links dos servidores de Back-end e Front-end da aplicação pelo log do terminal e faça o login com o seu usuário criado:
    
    - http://0.0.0.0:8000/
    
