@@ -47,7 +47,7 @@ O conjunto de funcionalidade que o Controle de Produtos disponibiliza são:
 - PIP(instalador de pacote Python padrão)
 - Docker e Docker Compose
 
-## Instalação:
+## Instalação via terminal:
 1 - Faça o clone/download deste respositório para seu host;
 2 - Dentro da pasta raiz do respositório crie e inicie uma Virtualenv(é uma ferramenta para criar ambientes Python isolados):
 
@@ -57,3 +57,12 @@ O conjunto de funcionalidade que o Controle de Produtos disponibiliza são:
 3- Ainda dentro da pasta raioz do respositório execute o build do docker-composed essa forma:
     
    docker-compose build
+   
+   docker-compose up
+   
+4- Acesse os links dos servidores de Frontend e Backend:
+   
+   http://0.0.0.0:8000/
+   
+   http://localhost:3000/
+   
