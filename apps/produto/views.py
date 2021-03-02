@@ -17,7 +17,8 @@ class ProdutoCreate(CreateView):
 
 class ProdutoList(ListView):
     model = Produto
-    paginate_by = 7
+    paginate_by = 4
+    ordering = ['-data_atualizacao']
     template_name = "produto/list.html"
 
 

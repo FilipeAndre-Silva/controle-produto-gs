@@ -59,13 +59,6 @@ import React, { Component } from "react";
             >
               {item.descricao}
             </span>
-
-            <span
-              className={`todo-title mr-2`}
-              title={item.qtd_estoque}
-            >
-              {item.qtd_estoque} Unidades
-            </span>
             <span>
               <button
                 onClick={() => this.editItem(item)}

@@ -40,7 +40,7 @@ import React, { Component } from "react";
                     name="descricao"
                     value={this.state.activeItem.descricao}
                     onChange={this.handleChange}
-                    placeholder="Enter Todo description"
+                    placeholder="Descrição do produto"
                   />
                 </FormGroup>
                 <FormGroup>
@@ -50,7 +50,7 @@ import React, { Component } from "react";
                     name="data_validade"
                     value={this.state.activeItem.data_validade}
                     onChange={this.handleChange}
-                    placeholder="Enter Todo description"
+                    placeholder="__/__/____"
                   />
                 </FormGroup>
                 <FormGroup>
@@ -60,7 +60,7 @@ import React, { Component } from "react";
                     name="qtd_estoque"
                     value={this.state.activeItem.qtd_estoque}
                     onChange={this.handleChange}
-                    placeholder="Enter Todo description"
+                    placeholder="Quantidade em estoque"
                   />
                 </FormGroup>
                 <FormGroup>
@@ -70,7 +70,7 @@ import React, { Component } from "react";
                     name="preco_unid"
                     value={this.state.activeItem.preco_unid}
                     onChange={this.handleChange}
-                    placeholder="Enter Todo description"
+                    placeholder="Preço da unidade do produto"
                   />
                 </FormGroup>
               </Form>
